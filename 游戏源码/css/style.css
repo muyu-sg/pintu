@@ -1,0 +1,191 @@
+body{
+	background-color: #EE6A50;
+    width: 100%;
+    height: 100%;
+}
+/* 给body设置100%的高度和宽度，这样就会根据浏览器屏幕大小自动适配 */
+#container{
+	width: 570px;
+	margin:0 auto;
+	text-align: center;
+	background-color:#EE6A50;
+	
+}
+#success {
+    position: absolute;
+    display: none;
+   padding-top: 100px;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 200%;
+    background: #000;
+    opacity: 0.85;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    line-height: 80px;
+}
+#success button{
+
+    width: 160px;
+
+}
+
+#play_ground{
+	border-radius: 16px;
+	margin: 10px 5px auto auto;
+	display: inline-block;
+	width: 450px;
+	height: 450px;
+	background-color:indianred;
+	background-color: #EE6A50;
+	position: relative;
+	border: 7px solid #EE6A50;
+	display: inline-block;
+}
+
+#buttons{
+	margin-bottom: 20px;
+	display: inline-block;
+	text-align: center;
+	
+}
+#right{
+	text-align: center;
+	top:25px;
+	display: inline-block;
+	position: absolute;
+	height: 450px;
+}
+#oriImg{
+	border-radius: 16px;
+	width: 15vw;
+	height: 15vw;
+	background-image: url(../img/c_.jpg);
+	background-size: 15vw;
+}
+#score{
+	top:10px;
+	width: 200px;
+	height: 60px;
+	position: relative;
+}
+#top{
+	top:10px;
+	width: 420px;
+	position: relative;
+	border-radius: 10px;
+	color: white;
+	display: inline-block;
+}
+
+.square{
+	border-radius: 16px;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #EE6A50;
+	pointer-events: none; /*禁止鼠标事件，auto是可以*/
+	cursor: pointer;
+	position: absolute;
+	background-size: 450px;
+	background-color:#EE6A50 ;
+	background-image: url(../img/c_.jpg);
+}
+
+#small_bolck1{
+	top: 0px;
+	left: 0px;
+	background-position: 0 0;
+}
+
+#small_bolck2{
+	top: 0px;
+	left: 150px;
+	background-position: -150px 0;
+}
+
+#small_bolck3{
+	top: 0px;
+	left: 300px;
+	background-position: -300px 0;
+}
+
+#small_bolck4{
+	top: 150px;
+	left: 0px;
+	background-position: 0 -150px;
+}
+
+#small_bolck5{
+	top: 150px;
+	left: 150px;
+	background-position: -150px -150px;
+}
+
+#small_bolck6{
+	top: 150px;
+	left: 300px;
+	background-position: -300px -150px;
+}
+
+#small_bolck7{
+	top: 300px;
+	left: 0px;
+	background-position: 0 -300px;
+}
+
+#small_bolck8{
+	top: 300px;
+	left: 150px;
+	background-position: -150px -300px;
+}
+#small_bolck9{
+	top: 300px;
+	left: 300px;
+	background-position: -300px -300px;
+}
+
+span{
+	font-family:YouYuan;
+	line-height: 30px;
+	text-shadow: 1px 0  #EE6A50;
+	font-size: 20px; /*字体大小*/
+	text-align: center;/*文字居中*/
+	color:black;
+}
+.text{
+	font-size: 40px; /*字体大小*/
+	text-align: center;/*文字居中*/
+}
+.exchange{
+	display:none;
+}
+#exchange{
+	width: 80px;
+	height: 40px;
+	margin-left: 20px;
+}
+#tips span{
+	font-size: 14px; /*字体大小*/
+	
+}
+button{
+    font-size: 15px;
+	background-color:#EEE685;
+    margin: 10px auto;
+    font-size: 20px;
+    height: 80px;
+    width: 80px;
+    color: black;
+    font-family:YouYuan;
+    margin: 10px auto;
+    padding: 8px 12px;
+    opacity: .90;
+    border-radius: 16px;
+}
+
+div {
+	transition: all 0.8s;
+}

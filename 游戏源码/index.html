@@ -1,0 +1,69 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>图片华容道</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+		<div id="container">
+			<div id="top">
+				<span id="tips"></span>
+			</div>
+			<div class="exchange">
+				<span>请输入要交换的的1到9的块序号：</span><br>
+				<input id="exchangeId" placeholder="如1，3"><button id="exchangebt" onclick="exchange()">确认</button>
+			</div>
+			<!-- 下边是九个方块的地方 -->
+			<div id="play_ground">
+			  <div class="square" id="small_bolck1" onclick="move(1)"></div>
+				<div class="square" id="small_bolck2" onclick="move(2)"></div>
+				<div class="square" id="small_bolck3" onclick="move(3)"></div>
+				<div class="square" id="small_bolck4" onclick="move(4)"></div>
+				<div class="square" id="small_bolck5" onclick="move(5)"></div>
+				<div class="square" id="small_bolck6" onclick="move(6)"></div>
+				<div class="square" id="small_bolck7" onclick="move(7)"></div>
+				<div class="square" id="small_bolck8" onclick="move(8)"></div>	
+				<div class="square" id="small_bolck9" onclick="move(9)"></div>
+
+			</div>
+			<!-- 下边是右边文字的地方 -->
+			<div id="buttons">
+				<button id="start_and_stop" onclick="startAndStop()">开始游戏</button>
+				<button id="reset" onclick="reset()">重新开始</button>
+				<button onclick="change()">更换图片</button> 
+				<button onclick="pointer()">提示步数</button> 
+				<button id="cheater" onclick="cheater()">动画演示</button>
+		</div>
+							
+			
+	</div>
+		<div id="right">
+
+				<div id="oriImg"></div>
+				<span>步数超过100将强制交换，<br>若此时棋盘无解，<br>可以调换任意两个图片的位置。</span>
+				<div id="score">
+				<!-- 游戏时间还有计数器 -->
+					<span>时间:</span>
+					<span class="text timer">0分0秒</span><br>
+					<!-- 开始按钮和结束按钮 -->
+					<span>步数:</span>
+					<span class="text step">0</span>
+				</div>
+
+			</div>
+	    <div id="success">
+        <h2>Success</h2>
+        <p>步数：<span class="text step">0</span></p>
+        <p>时间：<span class="text timer">0分0秒</span></p>
+        <button onclick="reset()">再来一次</button>
+    </div>
+		
+		
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/script.js" ”></script>		
+
+
+
+
+</body></html>
